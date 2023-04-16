@@ -58,7 +58,10 @@ public class Checkpoint_Handler : MonoBehaviour
         }
         //checkpointpos.position = checkpoints[0].transform.position;
         //Debug.Log("checkpointpos = " + checkpointpos.position);
-
+        if(Input.GetKey("escape"))
+        {
+            Application.Quit();   
+        }
     }
 
     void generateCheckpoint()

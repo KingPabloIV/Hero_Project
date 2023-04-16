@@ -25,6 +25,8 @@ public class Player_Movement : MonoBehaviour
         {
             isUsingMouse = !isUsingMouse;
             TextEditor.isUsingMouse = isUsingMouse;
+            if(isUsingMouse)
+                speed = 20;
         }
 
 

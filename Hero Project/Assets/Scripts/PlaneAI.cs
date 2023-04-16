@@ -24,6 +24,7 @@ public class PlaneAI : MonoBehaviour
         render = GetComponent<SpriteRenderer>();
         health = 4;
         checkpointNum = Random.Range(0, 6);
+        //checkpointNum = Random.Range(0, 5);
         //checkpointHandler = gameObject.GetComponent<Checkpoint_Handler>();
         //checkpointHandler = (Checkpoint_Handler) GameObject.Find("Main Camera").GetComponent("Checkpoint_Handler");
         speed = 20f;
@@ -38,6 +39,14 @@ public class PlaneAI : MonoBehaviour
         transform.Rotate(0, 0, rotationSpeed * Time.deltaTime * Mathf.Sign(Vector3.Cross(transform.up, gotoPos - transform.position).z));
         transform.position += transform.up * speed * Time.deltaTime;
         //Debug.Log("gotoPos = " + gotoPos);
+
+        if(Vector3.Distance(transform.position, gotoPos) < 1f)
+        {
+            if(Checkpoint_Handler.getIsRandom())
+                checkpointNum = Random.Range(0, 6);
+            else
+                checkpointNum = (checkpointNum + 1) % 6;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
