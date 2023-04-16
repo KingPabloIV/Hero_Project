@@ -335,6 +335,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -408,6 +409,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e46670b4144ce44a633b506d5d3067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpoints:
+  - {fileID: 676160493276958284, guid: 0458c49f4308b3147bd2d38d84543c3c, type: 3}
+  - {fileID: 676160493276958284, guid: 0458c49f4308b3147bd2d38d84543c3c, type: 3}
+  - {fileID: 676160493276958284, guid: 0458c49f4308b3147bd2d38d84543c3c, type: 3}
+  - {fileID: 676160493276958284, guid: 0458c49f4308b3147bd2d38d84543c3c, type: 3}
+  - {fileID: 676160493276958284, guid: 0458c49f4308b3147bd2d38d84543c3c, type: 3}
+  - {fileID: 676160493276958284, guid: 0458c49f4308b3147bd2d38d84543c3c, type: 3}
+  spriteArray:
+  - {fileID: 21300000, guid: 5ac3719b145e4df42b581345539893c1, type: 3}
+  - {fileID: 21300000, guid: c2922c0c0029bf94c9759652e60bb2db, type: 3}
+  - {fileID: 21300000, guid: 1208c765a8f5b8444b2a09128f9ce0b0, type: 3}
+  - {fileID: 21300000, guid: 8ed8deaa3ec2e284c9c20c0ec8bdc4f6, type: 3}
+  - {fileID: 21300000, guid: 5f83a954343f58a4b9bdd950aaa2c0a1, type: 3}
+  - {fileID: 21300000, guid: 39cbdd05df8fd8749a1e5ccc17949b1a, type: 3}
 --- !u!1 &602766609
 GameObject:
   m_ObjectHideFlags: 0
