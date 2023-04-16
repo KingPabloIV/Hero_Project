@@ -7,7 +7,9 @@ public class Checkpoint_Control : MonoBehaviour
 
     public int health;
 
-    private SpriteRenderer render;
+    public SpriteRenderer render;
+
+
 
 
     // Start is called before the first frame update

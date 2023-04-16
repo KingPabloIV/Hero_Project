@@ -30,5 +30,6 @@ public class TextEditor : MonoBehaviour
             text.text += "Using Mouse";
         else
             text.text += "Using Keyboard";
+        text.text += "\nEgg cooldown: " + ShootBullet.getCurrentCooldown();
     }
 }

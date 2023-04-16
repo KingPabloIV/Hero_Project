@@ -7,7 +7,7 @@ public class ShootBullet : MonoBehaviour
 
     public GameObject eggBullet;
     public float maxCooldown;
-    private float currentCooldown;
+    private static float currentCooldown;
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +26,10 @@ public class ShootBullet : MonoBehaviour
         }
         if(currentCooldown > 0)
             currentCooldown -= Time.deltaTime;
+    }
+
+    public static float getCurrentCooldown()
+    {
+        return currentCooldown;
     }
 }
