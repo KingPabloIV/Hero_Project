@@ -26,6 +26,8 @@ public class ShootBullet : MonoBehaviour
         }
         if(currentCooldown > 0)
             currentCooldown -= Time.deltaTime;
+        if(currentCooldown < 0)
+            currentCooldown = 0;
     }
 
     public static float getCurrentCooldown()

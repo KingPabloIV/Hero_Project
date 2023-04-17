@@ -30,6 +30,10 @@ public class TextEditor : MonoBehaviour
             text.text += "Using Mouse";
         else
             text.text += "Using Keyboard";
-        text.text += "\nEgg cooldown: " + ShootBullet.getCurrentCooldown();
+        text.text += "\nEgg cooldown: " + ShootBullet.getCurrentCooldown() + "\n";
+        text.text += "use 'm' to switch between mouse and keyboard\n";
+        text.text += "use 'f' to make planes follow player\n";
+        text.text += "added a force field to planes which destroys eggs on impact\n";
+        text.text += "forcefield starts inactive and has a random cooldown";
     }
 }
