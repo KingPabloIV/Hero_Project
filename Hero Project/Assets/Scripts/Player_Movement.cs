@@ -12,7 +12,7 @@ public class Player_Movement : MonoBehaviour
     void Start()
     {
         isUsingMouse = true;
-        speed = 0;
+        speed = 20;
         acceleration = 10;
         rotationSpeed = 90;
     }
